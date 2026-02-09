@@ -31,7 +31,13 @@ SECRET_KEY = "django-insecure-2^9w1+(st*)vot+ag^ecm0*i8%ui^65+hv7421mv1+aj&n8e=$
 #DEBUG = not PRODUCTION
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "lohkan-abhiseka-production.up.railway.app",
+    ".railway.app",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 
 # Application definition
@@ -161,4 +167,4 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SAMESITE = 'None'
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1", "http://10.0.2.2", "https://marla-marlena-lohkan.pbp.cs.ui.ac.id"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1", "http://10.0.2.2", "https://marla-marlena-lohkan.pbp.cs.ui.ac.id", "https://*.up.railway.app",]
