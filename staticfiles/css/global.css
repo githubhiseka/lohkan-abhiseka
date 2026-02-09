@@ -1,0 +1,139 @@
+/* Authentication */
+input[type="text"], input[type="password"] {
+    border: 2px solid black; 
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+input[type="text"]:focus, input[type="password"]:focus {
+border-color: black; 
+outline: none;
+}
+  
+/* Card */
+.card-shadow {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+.card-shadow:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typing text */
+.typing-demo {
+  font-family: monospace;
+  white-space: nowrap;  
+  overflow: hidden;     
+  border-right: 3px solid white; 
+  display: inline-block;
+  width: fit-content;    
+  width: 3ch;                  
+  animation: typing 4s steps(15, end) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; }      
+  50% { width: 100%; }   
+  100% { width: 0; }     
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.blinking-exclamation {
+  display: inline-block;
+  animation: blink-exclamation 1s infinite;  
+}
+
+@keyframes blink-exclamation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.bg-gray-100 {
+  background-color: #f7f7f7;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.bg-custom-light-maroon {
+  background-color: #9b3c3c;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Container for messages */
+.chatbot-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between messages */
+}
+
+/* User message styling */
+.user-message {
+  background-color: #e0f7fa; /* Light cyan for user messages */
+  border-radius: 20px 20px 5px 20px; /* Rounded edges */
+  padding: 10px 16px; /* Adjust padding for visual appeal */
+  border: 1px solid #00796b; /* Darker border for contrast */
+  align-self: flex-end; /* Align user messages to the right */
+  max-width: 75%; /* Limit width */
+  margin-bottom: 8px; /* Add margin below the user message */
+  position: relative; /* Still needed for layout control */
+}
+
+/* Add top margin to the first user message */
+.user-message:first-child {
+  margin-top: 12px; /* Add some top margin to the first message */
+}
+
+/* Bot message styling */
+.bot-message {
+  background-color: #ffe0b2; /* Light orange for bot messages */
+  border-radius: 20px 20px 20px 5px; /* Rounded edges */
+  padding: 10px 16px; /* Adjust padding for visual appeal */
+  border: 1px solid #ff6f00; /* Darker border for contrast */
+  align-self: flex-start; /* Align bot messages to the left */
+  max-width: 75%; /* Limit width */
+  margin-bottom: 8px; /* Add margin below the bot message */
+  position: relative; /* Still needed for layout control */
+}
+
+/* Add top margin to the first bot message */
+.bot-message:first-child {
+  margin-top: 12px; /* Add some top margin to the first message */
+}
+
+
+
+  
